@@ -18,6 +18,12 @@ namespace CountryData.StaticData
             _countryCost.Add(new Shipment { Country = "swden", Cost = 37 });
             _countryCost.Add(new Shipment { Country = "norway", Cost = 35 });
         }
+
+        public List<Shipment> GetAllCountriesShipmentCost()
+        {
+            return _countryCost;
+        }
+
         public decimal GetCountryShippingCost(string country)
         {
             return _countryCost.Where(x => x.Country == country).Select(s => s.Cost).FirstOrDefault();

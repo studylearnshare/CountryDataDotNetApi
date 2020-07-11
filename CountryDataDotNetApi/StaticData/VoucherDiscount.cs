@@ -17,6 +17,12 @@ namespace CountryData.StaticData
             _vouchers.Add(new Voucher { VoucherCode = "PLM321", Discount = 15 });
 
         }
+
+        public List<Voucher> GetAllVouchers()
+        {
+            return _vouchers;
+        }
+
         public int GetVoucherDiscount(string voucher)
         {
             var discount = _vouchers.Where(x => x.VoucherCode == voucher).Select(s => s.Discount).FirstOrDefault();

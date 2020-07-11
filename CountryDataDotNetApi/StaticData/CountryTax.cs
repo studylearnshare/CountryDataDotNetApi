@@ -17,6 +17,12 @@ namespace CountryData.StaticData
             _countriesTax.Add(new Tax { Country = "norway", VAT = 40 });
 
         }
+
+        public List<Tax> GetAllCountriesWithTax()
+        {
+            return _countriesTax;
+        }
+
         public float GetCountryTax(string country, decimal amount)
         {
             var tax = _countriesTax.Where(x => x.Country == country).Select(s => s.VAT).FirstOrDefault();
