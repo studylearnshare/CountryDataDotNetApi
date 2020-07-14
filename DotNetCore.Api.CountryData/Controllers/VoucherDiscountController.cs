@@ -13,16 +13,16 @@ namespace CountryData.Controllers
     [ApiController]
     public class VoucherDiscountController : ControllerBase
     {
-        private readonly IVoucherDiscount _voucherDicount;
+        private readonly IVoucherDiscountService _voucherDicount;
 
-        public VoucherDiscountController(IVoucherDiscount voucherDiscount )
+        public VoucherDiscountController(IVoucherDiscountService voucherDiscount )
         {
             _voucherDicount = voucherDiscount;
         }
         [HttpGet]
         public string Index()
         {
-            return "Service working!";
+            return $"/VoucherDiscount/ - Help {Environment.NewLine}/VoucherDiscount/all - All available vouchers along with discount{Environment.NewLine}/VoucherDiscount/code - Discount for given voucher code";
         }
         // GET: /<controller>/
         [HttpGet]

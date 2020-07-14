@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CountryData.StaticData
 {
-    public class VoucherDiscount : IVoucherDiscount
+    public class VoucherDiscountService : IVoucherDiscountService
     {
         public readonly List<Voucher> _vouchers = new List<Voucher>();
 
-        public VoucherDiscount()
+        public VoucherDiscountService()
         {
             _vouchers.Add(new Voucher{ VoucherCode = "AXZ123",  Discount = 10});
             _vouchers.Add(new Voucher { VoucherCode = "QAZ234", Discount = 5 });

@@ -25,7 +25,7 @@ namespace CountryData.Controllers
         [HttpGet]
         public string Index()
         {
-            return "Service working!";
+            return $"/ShipmentCost/ - Help {Environment.NewLine}/ShipmentCost/all - Shipment cost for all countries{Environment.NewLine}/ShipmentCost/country - Shipment cost for given country";
         }
 
         [HttpGet]

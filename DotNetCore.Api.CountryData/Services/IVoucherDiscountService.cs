@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace CountryData.StaticData
 {
-    public interface ICountryTax
+    public interface IVoucherDiscountService
     {
-        float GetCountryTax(string country, decimal amount);
+        int GetVoucherDiscount(string voucher);
 
-        List<Tax> GetAllCountriesWithTax();
+        List<Voucher> GetAllVouchers();
+
 
     }
+ 
 }

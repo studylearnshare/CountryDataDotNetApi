@@ -27,9 +27,9 @@ namespace CountryData
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<IShipmentCost, ShipmentCost>();
-            services.AddSingleton<ICountryTax, CountryTax>();
-            services.AddSingleton<IVoucherDiscount, VoucherDiscount>();
+            services.AddSingleton<IShipmentCost, ShipmentCostService>();
+            services.AddSingleton<ICountryTaxService, CountryTaxService>();
+            services.AddSingleton<IVoucherDiscountService, VoucherDiscountService>();
 
         }
 

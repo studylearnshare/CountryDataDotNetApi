@@ -7,8 +7,8 @@ namespace CountryData.Models
 {
     public class Shipment
     {
-        public string Country { get; set; }
+        public string Country { get;  internal set; }
 
-        public decimal Cost { get; set; }
+        public decimal Cost { get; internal set; }
     }
 }

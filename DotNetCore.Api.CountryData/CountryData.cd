@@ -1,69 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="CountryData.Models.Shipment">
-    <Position X="5.5" Y="4.25" Width="1.5" />
+    <Position X="3.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Shipment.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CountryData.Models.Tax">
-    <Position X="1" Y="4.25" Width="1.5" />
+    <Position X="5.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Tax.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CountryData.Models.Voucher">
-    <Position X="3.25" Y="4.25" Width="1.5" />
+    <Position X="1" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAgAAAAAAAAA=</HashCode>
       <FileName>Models\Voucher.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CountryData.StaticData.CountryTax" BaseTypeListCollapsed="true">
-    <Position X="5.5" Y="2.25" Width="2" />
+  <Class Name="CountryData.StaticData.CountryTaxService" BaseTypeListCollapsed="true">
+    <Position X="6" Y="2.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAI=</HashCode>
-      <FileName>StaticData\CountryTax.cs</FileName>
+      <FileName>Services\CountryTaxService.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="CountryData.StaticData.ShipmentCost" BaseTypeListCollapsed="true">
+  <Class Name="CountryData.StaticData.ShipmentCostService" BaseTypeListCollapsed="true">
     <Position X="3.25" Y="2.25" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAgABAAAAA=</HashCode>
-      <FileName>StaticData\ShipmentCost.cs</FileName>
+      <FileName>Services\ShipmentCostService.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="CountryData.StaticData.VoucherDiscount" BaseTypeListCollapsed="true">
-    <Position X="0.5" Y="2.25" Width="1.75" />
+  <Class Name="CountryData.StaticData.VoucherDiscountService">
+    <Position X="1" Y="2.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAIAABAAAAA=</HashCode>
-      <FileName>StaticData\VoucherDiscount.cs</FileName>
+      <FileName>Services\VoucherDiscountService.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="CountryData.StaticData.ICountryTax">
-    <Position X="5.5" Y="0.75" Width="2" />
+  <Interface Name="CountryData.StaticData.ICountryTaxService">
+    <Position X="6" Y="0.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAI=</HashCode>
-      <FileName>StaticData\ICountryTax.cs</FileName>
+      <FileName>Services\ICountryTaxService.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="CountryData.StaticData.IShipmentCost">
     <Position X="3.25" Y="0.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAgAAAAAAA=</HashCode>
-      <FileName>StaticData\IShipmentCost.cs</FileName>
+      <FileName>Services\IShipmentCost.Service.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="CountryData.StaticData.IVoucherDiscount">
-    <Position X="0.5" Y="0.75" Width="1.75" />
+  <Interface Name="CountryData.StaticData.IVoucherDiscountService">
+    <Position X="1" Y="0.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAABAAAAA=</HashCode>
-      <FileName>StaticData\IVoucherDiscount.cs</FileName>
+      <FileName>Services\IVoucherDiscountService.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

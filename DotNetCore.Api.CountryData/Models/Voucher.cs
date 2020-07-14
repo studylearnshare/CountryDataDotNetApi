@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace CountryData.Models
 {
-    public class Tax
+    public class Voucher
     {
-        public string Country { get; set; }
+        public string VoucherCode { get; internal set; }
 
-        public int VAT{ get; set; }
+        public int Discount { get; internal set; }
     }
 }

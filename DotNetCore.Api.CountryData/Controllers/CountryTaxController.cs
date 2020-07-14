@@ -14,16 +14,16 @@ namespace CountryData.Controllers
     [Route("[controller]")]
     public class CountryTaxController : ControllerBase
     {
-        private readonly ICountryTax _countryTax;
+        private readonly ICountryTaxService _countryTax;
 
-        public CountryTaxController(ICountryTax countryTax)
+        public CountryTaxController(ICountryTaxService countryTax)
         {
             _countryTax = countryTax;
         }
         [HttpGet]
         public string Index()
         {
-            return "Service working!";
+            return $"/CountryTax/ - Help {Environment.NewLine}/CountryTax/all - All countries along with tax applied{Environment.NewLine}/CountryTax/country/amount - Tax applied for given country and amount";
         }
         // GET: /<controller>/
         [HttpGet]

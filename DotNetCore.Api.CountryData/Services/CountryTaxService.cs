@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CountryData.StaticData
 {
-    public class CountryTax : ICountryTax
+    public class CountryTaxService : ICountryTaxService
     {
         public readonly List<Tax> _countriesTax = new List<Tax>();
 
-        public CountryTax()
+        public CountryTaxService()
         {
             _countriesTax.Add(new Tax { Country = "finland", VAT = 20 });
             _countriesTax.Add(new Tax { Country = "ireland", VAT = 30 });
