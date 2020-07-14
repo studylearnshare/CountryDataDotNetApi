@@ -29,6 +29,6 @@ To explore and test the available APIs simply run the project and use the Postma
 - /VoucherDiscount/ - Help
 - /VoucherDiscount/all - All available vouchers along with discount
 - /VoucherDiscount/code - Discount for given voucher code
-- 
+
 ## Diagram
 ![enter image description here](https://github.com/studylearnshare/DotNetCore.Api.CountryData/blob/master/images/CountryData.png)
